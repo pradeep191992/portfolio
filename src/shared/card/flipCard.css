@@ -1,0 +1,63 @@
+
+.flip-container {
+	perspective: 1000;
+}
+.flip-container, 
+.front, 
+.back {
+	width: 350px;
+	height: 500px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+  animation: rotateCard 10s infinite;
+}
+
+.front, 
+.back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  background-color: rgba(182, 255, 216, .25);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+@keyframes rotateCard {
+  0% {
+    transform: rotateY(0deg);
+  }
+  18% {
+    transform: rotateY(180deg);
+  }
+  36% {
+    transform: rotateY(360deg);
+  }
+  54% {
+    transform: rotateY(240deg);
+  }
+  72% {
+    transform: rotateY(180deg);
+  }
+  90% {
+    transform: rotateY(120deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
