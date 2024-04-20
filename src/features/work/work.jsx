@@ -1,9 +1,7 @@
-import LetsConnect from "../../shared/connect/lets-connect";
 import Card from "../../shared/card/card";
+import LetsConnect from "../../shared/connect/lets-connect";
 
-import { useRef } from 'react';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function Work() {
