@@ -9,7 +9,7 @@ function Contact() {
     <>
       <section className="pt-20 pb-24 px-4 lg:px-8">
         <div className="py-10">
-          <h1 className="h1 text-[110px] md:text-[180px] xl:text-[220px] leading-none uppercase flex items-center justify-center flex-wrap gap-2 overflow-hidden"><span className="title">Get in</span> <span className="text-[#737373] title">Touch</span></h1>
+          <h1 className="h1 test text-[110px] md:text-[180px] xl:text-[220px] leading-none uppercase flex items-center justify-center flex-wrap gap-2 overflow-hidden"><span className="title">Get in</span> <span className="text-[#737373] title">Touch</span></h1>
         </div>
         <div className=" w-full lg:w-[640px] m-auto">
           <form action="" className="flex flex-col gap-4">
